@@ -1,0 +1,4 @@
+c=0;
+while c<2
+  x=ceil(randn());
+  
