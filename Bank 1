@@ -1,4 +1,21 @@
 c=0;
 while c<2
   x=ceil(randn());
+  if x=1
+    ans=input('What is the command for taking the square root of something? ');
+    if ans==('sqrt')
+    disp('That is correct!')
+    c=c+1;
+    else
+    disp('Wrong. Try another question.');
+    c=c;
+  elseif x=2
+    ans=input(
+  elseif x=3
+    ans=input(
+  elseif x=4
+    ans=input(
+  else
+    ans=input(
+  end
   
