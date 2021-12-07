@@ -3,3 +3,29 @@
 %%
 %% Are you smarter than a programming student?
 %%
+
+disp("Let's play a trivia");
+c=0
+while (c<2)
+  x=ceil(rand()*5);
+  w=0;
+  N=length(A);
+  for k=1:N
+    if A(1,k)~=0
+        w=w+1;
+      end
+  end
+  if w==0
+      disp("You've Lost");
+  end
+  while (A(1,x)==0)
+    x=ceil(rand()*5);
+   end
+   Answer=feval(A(1,x));
+   A(1,x)=0;
+   if (Answer==1)
+    c=c+1;
+   else
+    c=c-1;
+   end
+end
