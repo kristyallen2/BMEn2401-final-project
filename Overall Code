@@ -1,8 +1,5 @@
 %% Final project BMEn 2401 Fall 2021
 %% Group members: Kristy Allen, Nick Stan, Allison Lundborg, Sam Schmitt
-%% Who wants to be a millionaire????!!
+%%
 %% Are you smarter than a programming student?
-%% Have you ever had a rat in your house?
-disp('Lets play Are You Smarter Than A Biomedical Engineer!');
-
-
+%%
