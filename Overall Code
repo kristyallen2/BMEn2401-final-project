@@ -2,7 +2,7 @@
 %% Group members: Kristy Allen, Nick Stan, Allison Lundborg, Sam Schmitt
 %% Are you smarter than a programming student?
 
-disp("Let's play a trivia");
+disp("Let's play Are You Smarter Than A Programming Student");
 c=0
 while (c<2)
   x=ceil(rand()*5);
