@@ -1,8 +1,6 @@
 %% Final project BMEn 2401 Fall 2021
 %% Group members: Kristy Allen, Nick Stan, Allison Lundborg, Sam Schmitt
-%%
 %% Are you smarter than a programming student?
-%%
 
 disp("Let's play a trivia");
 c=0
