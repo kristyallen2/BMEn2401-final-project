@@ -27,3 +27,63 @@ while (c<2)
     c=c-1;
    end
 end
+
+while (c<6)
+  x=ceil(rand()*5);
+  while (A(1,x)==0)
+    x=ceil(rand()*5);
+   end
+   Answer=feval(A(1,x));
+   A(1,x)=0;
+   if (Answer==1)
+    c=c+2;
+   else
+    c=c-2;
+   end
+end
+
+while (c<12)
+  x=ceil(rand()*5);
+  while (A(1,x)==0)
+    x=ceil(rand()*5);
+   end
+   Answer=feval(A(1,x));
+   A(1,x)=0;
+   if (Answer==1)
+    c=c+3;
+   else
+    c=c-3;
+   end
+end
+
+while (c<20)
+  x=ceil(rand()*5);
+  while (A(1,x)==0)
+    x=ceil(rand()*5);
+   end
+   Answer=feval(A(1,x));
+   A(1,x)=0;
+   if (Answer==1)
+    c=c+4;
+   else
+    c=c-4;
+   end
+end
+
+while (c<30)
+  x=ceil(rand()*5);
+  while (A(1,x)==0)
+    x=ceil(rand()*5);
+   end
+   Answer=feval(A(1,x));
+   A(1,x)=0;
+   if (Answer==1)
+    c=c+5;
+   else
+    c=c-5;
+   end
+end
+
+if (c>=30)
+  disp("You've Won The Game!");
+end
