@@ -3,6 +3,7 @@
 %% Are you smarter than a programming student?
 
 disp("Let's play Are You Smarter Than A Programming Student");
+A=dlmread('function matrix.xlsx');
 c=0
 while (c<2)
   x=ceil(rand()*5);
