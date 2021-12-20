@@ -3,25 +3,25 @@
 %% Are you smarter than a programming student?
 
 disp("Let's play Are You Smarter Than A Programming Student");
-A=dlmread('function matrix.xlsx');
+A={.    } %fill in 5x5 matrix with names of functions (only the name on () or inputs or .m)
 c=0
 while (c<2)
   x=ceil(rand()*5);
   w=0;
   N=length(A);
   for k=1:N
-    if A(1,k)~=0
+    if A{1,k}~=0
         w=w+1;
       end
   end
   if w==0
       disp("You've Lost");
   end
-  while (A(1,x)==0)
+  while (A{1,x}==0)
     x=ceil(rand()*5);
    end
-   Answer=feval(A(1,x));
-   A(1,x)=0;
+   Answer=feval(char(A(1,x)));
+   A(1,x)={0};
    if (Answer==1)
     c=c+1;
    else
@@ -31,11 +31,21 @@ end
 
 while (c<4 && c>=2)
   x=ceil(rand()*5);
-  while (A(1,x)==0)
+  w=0;
+  N=length(A);
+  for k=1:N
+    if A{2,k}~=0
+        w=w+1;
+      end
+  end
+  if w==0
+      disp("You've Lost");
+  end
+  while (A{2,x}==0)
     x=ceil(rand()*5);
    end
-   Answer=feval(A(1,x));
-   A(1,x)=0;
+   Answer=feval(char(A(2,x)));
+   A(2,x)={0};
    if (Answer==1)
     c=c+1;
    else
@@ -45,11 +55,21 @@ end
 
 while (c<6 && c>=4)
   x=ceil(rand()*5);
-  while (A(1,x)==0)
+  w=0;
+  N=length(A);
+  for k=1:N
+    if A{3,k}~=0
+        w=w+1;
+      end
+  end
+  if w==0
+      disp("You've Lost");
+  end
+  while (A{3,x}==0)
     x=ceil(rand()*5);
    end
-   Answer=feval(A(1,x));
-   A(1,x)=0;
+   Answer=feval(char(A(3,x)));
+   A(3,x)={0};
    if (Answer==1)
     c=c+3;
    else
@@ -59,11 +79,21 @@ end
 
 while (c<8 && c>=6)
   x=ceil(rand()*5);
-  while (A(1,x)==0)
+  w=0;
+  N=length(A);
+  for k=1:N
+    if A{4,k}~=0
+        w=w+1;
+      end
+  end
+  if w==0
+      disp("You've Lost");
+  end
+  while (A{4,x}==0)
     x=ceil(rand()*5);
    end
-   Answer=feval(A(1,x));
-   A(1,x)=0;
+   Answer=feval(char(A(4,x)));
+   A(4,x)={0};
    if (Answer==1)
     c=c+4;
    else
@@ -73,11 +103,21 @@ end
 
 while (c<10 && c>=8)
   x=ceil(rand()*5);
-  while (A(1,x)==0)
+  w=0;
+  N=length(A);
+  for k=1:N
+    if A{5,k}~=0
+        w=w+1;
+      end
+  end
+  if w==0
+      disp("You've Lost");
+  end
+  while (A{5,x}==0)
     x=ceil(rand()*5);
    end
-   Answer=feval(A(1,x));
-   A(1,x)=0;
+   Answer=feval(char(A(5,x)));
+   A(5,x)={0};
    if (Answer==1)
     c=c+5;
    else
