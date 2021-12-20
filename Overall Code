@@ -2,7 +2,20 @@
 %% Group members: Kristy Allen, Nick Stan, Allison Lundborg, Sam Schmitt
 %% Are you smarter than a programming student?
 
-disp("Let's play Are You Smarter Than A Programming Student");
+
+disp ('Welcome to Are You Smarter Than A BME Student')
+disp('The rules are as follows...')
+disp('1. There are 5 banks of questions which gradually get harder if you continue to answer correctly')
+disp('2. You must answer 2 questions from each bank correctly before moving on to the next hardest question bank')
+disp('3. If you get a question wrong you will get bumped back to the prior question bank where you will again')
+disp('need to get two correct to move on')
+disp('If you get the question correct, you will not see that question again. However if you get a question wrong there is a change you will see it again.')
+disp('4. For every correct answer your point total will go up by the value of the question bank you are in (i.e Bank 3 = 3 points per correct answer) and for any incorrect answer it will go down by the same value')
+disp('5. Once any question bank runs out of questions, you lose')
+
+disp('Good Luck!')
+
+
 A={.    } %fill in 5x5 matrix with names of functions (only the name on () or inputs or .m)
 c=0
 while (c<2)
